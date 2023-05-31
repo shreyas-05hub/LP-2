@@ -1,0 +1,19 @@
+Create a folder
+
+Create 2 files inside the folder
+a.Dockerfile(d must be capital, download docker extension)
+b.filename.js
+
+a.Dockerfile
+  FROM node:alpine
+  COPY ./foldername
+  CMD node /foldername/filename.js
+
+b.filename.js
+  console.log("...........");
+
+on terminal 
+a.docker --version
+b.node filename.js
+c.docker build -t foldername .
+d.docker images(will show imgs created)

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #fff;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <!--<div class="col-lg-3 col-md-4 col-sm-12 sidebar">
+                <h2>Admin Dashboard</h2>
+                <a href="#">Dashboard</a>
+                <a href="#">Orders</a>
+                <a href="#">Products</a>
+                <a href="#">Customers</a>
+                <a href="#">Reports</a>
+            </div>-->
+
+            <!-- Main Content -->
+            <div class="col-lg-9 col-md-8 col-sm-12 content">
+                <h2>Dashboard</h2>
+                <div class="row">
+                    <!-- Statistics Cards -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card bg-primary text-white">
+                            <div class="card-body">
+                                <h3>Total Sales</h3>
+                                <p>1,234</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card bg-success text-white">
+                            <div class="card-body">
+                                <h3>New Orders</h3>
+                                <p>567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card bg-info text-white">
+                            <div class="card-body">
+                                <h3>Customers</h3>
+                                <p>890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card bg-warning text-white">
+                            <div class="card-body">
+                                <h3>Pending Orders</h3>
+                                <p>123</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

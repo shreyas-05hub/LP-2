@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Mobile Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+    <div data-role="page" id="page1">
+        <div data-role="panel" id="panel1">
+            <h1>This Is Panel1 </h1>
+        </div>
+        <div data-role="panel" id="panel2">
+            <h1>This Is Panel2 </h1>
+        </div>
+        <div data-role="header">
+            <h1>Personal Info</h1>
+        </div>
+
+        <div data-role="content">
+
+            <form action="#" method="get">
+                <label for="FirstName">First Name: </label>
+                <input type="text" name="FirstName" id="FirstName" placeholder="FirstName">
+
+                <label for="LastName">Last Name: </label>
+                <input type="text" name="LastName" id="LastName" placeholder="LastName">
+
+                <label for="gender">gender: </label>
+                <select name="gender" id="gender">
+                    <option value="select">select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="other">other</option>
+                </select>
+
+                <div data-role="fieldcontain">
+                    <label for="age">Age:</label>
+                    <input type="range" max="120" name="age" id="age" value="" min="13">
+                </div>
+
+                <label for="pets">pets:</label>
+                <br>
+                <input type="checkbox" id="dog" name="dog">
+                <label for="dog">dog</label>
+                <input type="checkbox" id="cat" name="cat">
+                <label for="cat">cat</label>
+                <input type="checkbox" id="lion" name="lion">
+                <label for="lion">lion</label>
+
+
+
+
+                <label for="placed">Are you Placed</label>
+                <select name="Placed" id="placed" data-role="slider">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+
+                </select>
+                <a href="#panel1" data-role="button">Panel1</a>
+                <a href="#panel2" data-role="button">Panel2</a>
+                <a href="#page2" data-role="button" data-icon="arrow-r" data-transition="flip" data-theme="b">Submit</a>
+            </form>
+
+        </div>
+
+
+
+    </div>
+    <div data-role="page" id="page2">
+        <div data-role="header">
+            <h1>Form Submitted Succesfully</h1>
+        </div>
+        <div data-role="content">
+            <label for="refrom">Do You Want To Fill Form Again?</label>
+            <a href="#page1" data-role="button">yes</a>
+            <a href="#dialog-box" data-role="button" data-rel="dialog" data-transition="pop">No</a>
+        </div>
+        <div id="dialog-box" data-role="popup">
+            <div data-role="header">
+                <h1>Thankyou For Information</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
